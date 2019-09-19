@@ -21,3 +21,9 @@ result_list = sorted(sum, key=list.__getitem__)
 result_str = ''.join(result_list)
 
 print(result_str)
+
+result = result_str.replace('IIIII','V').replace('VV','X').replace('XXXXX','L').replace('LL','C').replace('CCCCC','D').replace('DD','M')
+
+print (result)
+
+print 'The result is: ', result
