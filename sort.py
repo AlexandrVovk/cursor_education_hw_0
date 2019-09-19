@@ -2,10 +2,17 @@
 import os
 import sys
 
-#students = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
+digit_one = raw_input("please type first roman digit: ")
 
-digit = 'VII'
+print (digit_one)
 
-newgrades = {'I': 'A', 'V': 'B', 'X': 'C', 'L': 'D', 'C': 'E', 'D': 'F', 'M': 'G'}
+digit_two = raw_input("please type first roman digit: ")
 
-print sorted(digit, key=newgrades.__getitem__)
+print (digit_two)
+
+newgrades = {'M': '1', 'D': '2', 'C': '3', 'L': '4', 'X': '5', 'V': '6', 'I': '7'}
+
+result = sorted(digit_one, key=newgrades.__getitem__)
+
+print (''.join(result))
+
