@@ -4,15 +4,20 @@ import sys
 
 digit_one = raw_input("please type first roman digit: ")
 
-print (digit_one)
+#print (digit_one)
 
 digit_two = raw_input("please type first roman digit: ")
 
-print (digit_two)
+#print (digit_two)
 
-newgrades = {'M': '1', 'D': '2', 'C': '3', 'L': '4', 'X': '5', 'V': '6', 'I': '7'}
+sum = digit_one+digit_two
 
-result = sorted(digit_one, key=newgrades.__getitem__)
+#print(sum)
 
-print (''.join(result))
+list = {'M': '1', 'D': '2', 'C': '3', 'L': '4', 'X': '5', 'V': '6', 'I': '7'}
 
+result_list = sorted(sum, key=list.__getitem__)
+
+result_str = ''.join(result_list)
+
+print(result_str)
